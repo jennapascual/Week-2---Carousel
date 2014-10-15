@@ -13,6 +13,7 @@
 		B1EFE34219EE1AA8000B2067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1EFE34119EE1AA8000B2067 /* Images.xcassets */; };
 		B1EFE34519EE1AA8000B2067 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EFE34319EE1AA8000B2067 /* LaunchScreen.xib */; };
 		B1EFE35119EE1AA8000B2067 /* CarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFE35019EE1AA8000B2067 /* CarouselTests.swift */; };
+		B1EFE35B19EE1E5F000B2067 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFE35A19EE1E5F000B2067 /* IntroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B1EFE34A19EE1AA8000B2067 /* CarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1EFE34F19EE1AA8000B2067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1EFE35019EE1AA8000B2067 /* CarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTests.swift; sourceTree = "<group>"; };
+		B1EFE35A19EE1E5F000B2067 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		B1EFE33719EE1AA8000B2067 /* Carousel */ = {
 			isa = PBXGroup;
 			children = (
+				B1EFE35C19EE1EFF000B2067 /* View Controllers */,
 				B1EFE33A19EE1AA8000B2067 /* AppDelegate.swift */,
 				B1EFE33C19EE1AA8000B2067 /* ViewController.swift */,
 				B1EFE33E19EE1AA8000B2067 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				B1EFE34F19EE1AA8000B2067 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1EFE35C19EE1EFF000B2067 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1EFE35A19EE1E5F000B2067 /* IntroViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1EFE35B19EE1E5F000B2067 /* IntroViewController.swift in Sources */,
 				B1EFE33D19EE1AA8000B2067 /* ViewController.swift in Sources */,
 				B1EFE33B19EE1AA8000B2067 /* AppDelegate.swift in Sources */,
 			);
