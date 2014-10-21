@@ -9,6 +9,8 @@
 import UIKit
 
 class SignInViewController: UIViewController {
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var loginForm: UIImageView!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -31,6 +33,15 @@ class SignInViewController: UIViewController {
             }
         }
     }
+    func keyboardWillShow(notification: NSNotification!) {
+        scrollView.contentOffset.y = loginForm.frame.origin.y
+    }
+    
+    func keyboardWillHide(notification: NSNotification!) {
+        scrollView.contentOffset.y = 0
+        
+    }
+    
     func checkPassword(){
         if emailField.text == "jenna@gmail.com" && passwordField.text == "jenna"{
         performSegueWithIdentifier("signInSuccessful", sender: self)
@@ -50,6 +61,8 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
 
         // Do any additional setup after loading the view.
     }
