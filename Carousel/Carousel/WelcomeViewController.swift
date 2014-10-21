@@ -1,30 +1,38 @@
 //
-//  IntroViewController.swift
+//  WelcomeViewController.swift
 //  Carousel
 //
-//  Created by Jenna Pascual on 10/14/14.
+//  Created by Jenna Pascual on 10/20/14.
 //  Copyright (c) 2014 Jenna Pascual. All rights reserved.
 //
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var scrollView: UIScrollView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 320, height: 1136)
+        scrollView.delegate = self
+        scrollView.contentSize = CGSize(width: 1280, height: 568)
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView!) {
+        // Get the current page based on the scroll offset
+        var page : Int = Int(round(scrollView.contentOffset.x / 320))
         
-        
+        // Set the current page, so the dots will update
+        pageControl.currentPage = page
+    }
+
 
         // Do any additional setup after loading the view.
-    }
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+
         // Dispose of any resources that can be recreated.
-    }
+
     
 
     /*
