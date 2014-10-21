@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B1182A7D19F5DD0C0079B18A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1182A7C19F5DD0C0079B18A /* SignInViewController.swift */; };
 		B1D2574419F5FF9200294F89 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2574319F5FF9200294F89 /* WelcomeViewController.swift */; };
+		B1D2574619F60B4300294F89 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2574519F60B4300294F89 /* TimelineViewController.swift */; };
+		B1D2574819F611F500294F89 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2574719F611F500294F89 /* ConversationsViewController.swift */; };
+		B1D2574A19F6123D00294F89 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2574919F6123D00294F89 /* SettingsViewController.swift */; };
 		B1EFE33B19EE1AA8000B2067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFE33A19EE1AA8000B2067 /* AppDelegate.swift */; };
 		B1EFE33D19EE1AA8000B2067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFE33C19EE1AA8000B2067 /* ViewController.swift */; };
 		B1EFE34019EE1AA8000B2067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1EFE33E19EE1AA8000B2067 /* Main.storyboard */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		B1182A7C19F5DD0C0079B18A /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B1D2574319F5FF9200294F89 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B1D2574519F60B4300294F89 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		B1D2574719F611F500294F89 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		B1D2574919F6123D00294F89 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B1EFE33519EE1AA8000B2067 /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1EFE33919EE1AA8000B2067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1EFE33A19EE1AA8000B2067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +128,9 @@
 		B1EFE35C19EE1EFF000B2067 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B1D2574919F6123D00294F89 /* SettingsViewController.swift */,
+				B1D2574719F611F500294F89 /* ConversationsViewController.swift */,
+				B1D2574519F60B4300294F89 /* TimelineViewController.swift */,
 				B1D2574319F5FF9200294F89 /* WelcomeViewController.swift */,
 				B1182A7C19F5DD0C0079B18A /* SignInViewController.swift */,
 				B1EFE35A19EE1E5F000B2067 /* IntroViewController.swift */,
@@ -231,9 +240,12 @@
 			files = (
 				B1182A7D19F5DD0C0079B18A /* SignInViewController.swift in Sources */,
 				B1D2574419F5FF9200294F89 /* WelcomeViewController.swift in Sources */,
+				B1D2574819F611F500294F89 /* ConversationsViewController.swift in Sources */,
 				B1EFE35B19EE1E5F000B2067 /* IntroViewController.swift in Sources */,
 				B1EFE33D19EE1AA8000B2067 /* ViewController.swift in Sources */,
 				B1EFE33B19EE1AA8000B2067 /* AppDelegate.swift in Sources */,
+				B1D2574619F60B4300294F89 /* TimelineViewController.swift in Sources */,
+				B1D2574A19F6123D00294F89 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
